@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NodeLog</title>
+<meta name="description" content="양식을 정해두고 빠르게 남기는 기록 앱 · Set up once, log in seconds">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root { --bg: #F6F6F4; --surface: #FFFFFF; --text: #17181A; --muted: #6B6E73; --border: #E6E6E2; --accent: #3F8F6B; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0E0F10; --surface: #1A1B1D; --text: #F2F2F0; --muted: #989BA0; --border: #2B2D30; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--text);
+    font: 16px/1.6 Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    padding: 40px 20px;
+  }
+  main { max-width: 440px; text-align: center; }
+  .mark { width: 72px; height: 72px; border-radius: 18px; background: #17181A; display: grid; place-items: center; margin: 0 auto 20px; }
+  h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+  p { color: var(--muted); margin: 0 0 4px; }
+  ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 8px; }
+  li a { display: block; padding: 12px 16px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; }
+  li a:hover { border-color: var(--accent); }
+  .contact { margin-top: 24px; font-size: 14px; }
+  .contact a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 18 18">
+      <g fill="#F2F2F0">
+        <circle cx="2.2" cy="2.2" r="2.2"/><circle cx="9" cy="2.2" r="2.2"/><circle cx="15.8" cy="2.2" r="2.2"/>
+        <circle cx="2.2" cy="9" r="2.2"/><circle cx="9" cy="9" r="2.2"/><circle cx="15.8" cy="9" r="2.2"/>
+        <circle cx="2.2" cy="15.8" r="2.2"/><circle cx="9" cy="15.8" r="2.2"/>
+      </g>
+      <circle cx="15.8" cy="15.8" r="1.8" fill="none" stroke="#3F8F6B" stroke-width="0.9"/>
+    </svg>
+  </div>
+  <h1>NodeLog</h1>
+  <p>양식을 정해두고 빠르게 남기는 기록 앱</p>
+  <p lang="en">Set up once, log in seconds.</p>
+
+  <ul>
+    <li><a href="privacy/#ko">개인정보처리방침</a></li>
+    <li><a href="privacy/#en" lang="en">Privacy Policy</a></li>
+  </ul>
+
+  <p class="contact">문의 · Contact: <a href="mailto:nodelog.app@gmail.com">nodelog.app@gmail.com</a></p>
+</main>
+</body>
+</html>
